@@ -19,8 +19,8 @@
    ```
 ### 4.Install the entire ROS package suite using the following command:
    ```
-       -sudo apt-get install ros-kinetic-desktop-full
-       -apt-cache search ros-kinetic
+       -      sudo apt-get install ros-kinetic-desktop-full
+       -      apt-cache search ros-kinetic
    ```
        
 ### 5.Environment setup:
@@ -34,9 +34,9 @@
    ```
 ### 7.Initialize rosdep:
    ```
-       -sudo apt install python-rosdep
-       -sudo rosdep init 
-       -rosdep update
+       -     sudo apt install python-rosdep
+       -     sudo rosdep init 
+       -     rosdep update
    ```
 ### 8.Install catkin:
    ```
@@ -44,31 +44,31 @@
    ```
 ### 9.Make workspace:
    ```
-       -mkdir -p ~/catkin_ws/src
-       -cd ~/catkin_ws/
-       -catkin_make
-       -cd ~/catkin_ws/src
+       -     mkdir -p ~/catkin_ws/src
+       -     cd ~/catkin_ws/
+       -     catkin_make
+       -     cd ~/catkin_ws/src
    ```
 ### 10.To can acsses packages of robot:
 ```
-       -git clone https://github.com/smart-methods/arduino_robot_arm.git
-       -cd ~/catkin_ws
-       -rosdep install --from-paths src --ignore-src -r -y
-       -sudo apt-get install ros-kinetic-moveit
-       -sudo apt-get install ros-kinetic-joint-state-publisher ros-kinetic-joint-state-publisher-gui
-       -sudo apt-get install ros-kinetic-gazebo-ros-control joint-state-publisher
-       -sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-ros-control
-       -sudo nano ~/.bashrc
-       -at the end of the (bashrc) file add the follwing line
-        (source /home/SystemName/catkin_ws/devel/setup.bash)
+       -     git clone https://github.com/smart-methods/arduino_robot_arm.git
+       -     cd ~/catkin_ws
+       -     rosdep install --from-paths src --ignore-src -r -y
+       -     sudo apt-get install ros-kinetic-moveit
+       -     sudo apt-get install ros-kinetic-joint-state-publisher ros-kinetic-joint-state-publisher-gui
+       -     sudo apt-get install ros-kinetic-gazebo-ros-control joint-state-publisher
+       -     sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-ros-control
+       -     sudo nano ~/.bashrc
+       -     at the end of the (bashrc) file add the follwing line
+             (source /home/SystemName/catkin_ws/devel/setup.bash)
         then 
-       ctrl + o
+             ctrl + o
        then
-       ctrl + x
+            ctrl + x
 
-      -source ~/.bashrc
+      -     source ~/.bashrc
 
-      -roslaunch robot_arm_pkg check_motors.launch
+      -     roslaunch robot_arm_pkg check_motors.launch
  ```
 #### Now, Rviz program will open on Ros to work on robot arm
         
