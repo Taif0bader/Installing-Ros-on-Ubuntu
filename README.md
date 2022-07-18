@@ -40,6 +40,7 @@
        -     sudo rosdep init 
        -     rosdep update
    ```
+#### (Optional)
 #### 8.Install catkin:
    ```
        sudo apt-get install ros-noetic-catkin
